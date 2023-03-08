@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third day of front end development</title>
+
+    <!-- inside styling -->
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <p></p>
+    <cite>www.facebook.com</cite><br>
+    <abbr title="ASCOL">Amrit Science Campus</abbr><br><dfn></dfn>
+    <dfn>Love</dfn> is a very essential things in our life. It is everything. <br>
+    <address>
+        <p><a href="https://clg.askmitra.com/">
+                Ask_mitra</a></p>
+        <p>742 Evergreen Terrace, Springfield.</p>
+    </address>
+
+    I love <ins>💘❤️ </ins> programming.
+    Sell iphone in <del>7800$ </del> 6000$.
+    </p>
+
+    <h4><q>Core Internet Technology</q></h4>
+    <p>
+        An IP (Internet Protocol) address is a unique numerical identifier assigned to every device connected to the
+        internet. IP addresses are used to identify and communicate with devices on the internet, just like phone
+        numbers are used to identify and communicate with people on a phone network.
+
+        There are two versions of IP addresses in use today: IPv4 and IPv6. <br>
+    </p>
+
+    <table style="width:100%">
+        <tr>
+            <th> IPv4 </th>
+            <th> IPv6</th>
+        </tr>
+        <!-- first row -->
+        <tr>
+            <td> 32-bit address length, expressed in decimal numbers separated by periods. </td>
+            <td>128-bit address length, expressed in hexadecimal numbers separated by colons. </td>
+        </tr>
+
+        <!-- second row -->
+        <tr>
+            <td>Supports approximately 4.3 billion unique addresses. </td>
+            <td>Supports an astronomically large number of unique addresses (approximately 3.4 x 10^38), which should be
+                sufficient for the foreseeable future. </td>
+        </tr>
+        <!-- third row -->
+        <tr>
+            <td> The address space is divided into classes, with Class A, B, and C being the most common. </td>
+            <td>The address space is flat, with no distinction between classes. </td>
+        </tr>
+
+        <!-- fourth row -->
+        <tr>
+            <td> Uses ARP (Address Resolution Protocol) to map IP addresses to MAC addresses. </td>
+            <td>Uses Neighbor Discovery Protocol (NDP) to map IP addresses to MAC addresses. </td>
+        </tr>
+        <!-- fifth row -->
+        <tr>
+            <td> Includes optional fields in the header, such as flags and checksum. </td>
+            <td>Simplifies the header by removing optional fields and incorporating optional features as
+                extensionheaders.</td>
+        </tr>
+        <!-- sixth row -->
+        <tr>
+            <td> Uses broadcast to communicate with all devices on a network. </td>
+            <td>Uses multicast to communicate with groups of devices on a network. </td>
+        </tr>
+    </table>
+    <br>
+    <p>
+        IP addresses are essential for routing data packets between devices on the internet. When a device sends a
+        request to another device on the internet, it uses the destination device's IP address to route the data packet
+        to the correct destination.
+
+        IP addresses can be assigned dynamically or statically. Dynamic IP addresses are assigned automatically by a
+        DHCP (Dynamic Host Configuration Protocol) server, while static IP addresses are manually assigned to a device
+        and do not change unless manually reconfigured.
+
+        In summary, IP addresses are unique numerical identifiers that are essential for communication and data transfer
+        on the internet.
+    </p>
+
+    <h4>Data transmission</h4>
+    Data transmission refers to the process of sending digital data over a communication channel or network from one
+    device to another. Here are the basic steps involved in data transmission:
+
+    <li>Encoding: The digital data is converted into a format that can be transmitted over the communication channel,
+        such
+        as binary or hexadecimal.</li>
+
+    <li>Transmission: The encoded data is transmitted over the communication channel, which can be a wired or wireless
+        connection.</li>
+
+    <li>Reception: The receiving device receives the transmitted data.</li>
+
+    <li>Decoding: The received data is decoded back into its original format, such as text or an image.</li>
+
+    <p> Data transmission can occur over various types of communication channels, such as copper wires, fiber optic
+        cables,
+        or wireless radio waves. The speed and quality of data transmission depend on several factors, such as the
+        bandwidth
+        of the communication channel, the distance between the transmitting and receiving devices, and the level of
+        interference in the communication channel. Different protocols, such as TCP/IP, are used to manage the
+        transmission
+        of data over networks and ensure that the data is delivered reliably and efficiently.
+    </p>
+
+    <p>
+        An HTTP requests consists of a method, path, version and headers. The HTTP method describes the type of action
+        that the client must performed. The primary or the most commonly used HTTP methods are, GET, POST, PUT, and
+        DELETE.
+    </p>
+
+    <h3> Server resoponse </h3>
+    <ul>
+        <li>Informational: 100 to 199</li>
+        <li>Successful: 200 to 299 </li>
+        <li>Redirection: 300 to 399</li>
+        <li>Client error: 400 to 499</li>
+        <li>Server error: 500 to 599</li>
+    </ul>
+
+    <p>
+        HTTP Request Headers
+    <pre>
+            Host: example.com
+            User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:50.0) Gecko/20100101 Firefox/50.0
+            Accept: */*
+            Accept-Language: en
+            Content-type: text/json
+        </pre>
+    <pre>
+            The Host header specifies the host of the server and indicates where the resource is requested from.
+            The User-Agent header informs the web server of the application that is making the request. It often includes the operating system (Windows, Mac, Linux), version and application vendor.
+            The Accept header informs the web server what type of content the client will accept as the response.
+            The Accept-Language header indicates the language and optionally the locale that the client prefers.
+            The Content-type header indicates the type of content being transmitted in the request body.
+        </pre>
+    </p>
+
+    <h3>Dynamic Host Configuration Protocol (DHCP)</h3>
+    <p> When your computer connects to a network, the Dynamic Host Configuration Protocol or DHCP as it is commonly
+        known,
+        is used to assign your computer an IP address.
+        Your computer communicates over User Datagram Protocol (UDP) using the protocol with a type of server called a
+        DHCP
+        server.
+    </p>
+    <h3>Domain Name System Protocol (DNS)</h3>
+    <h3>Internet Message Access Protocol (IMAP)</h3>
+    <h3>Simple Mail Transfer Protocol (SMTP)</h3>
+    <h3>Post Office Protocol (POP)</h3>
+    <h3>File Transfer Protocol (FTP)</h3>
+    <h3>Secure Shell Protocol (SSH)</h3>
+    <h3>SSH File Transfer Protocol (SFTP)</h3>
+
+</body>
+
+</html>
