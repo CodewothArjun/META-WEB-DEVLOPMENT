@@ -1,0 +1,25 @@
+input {
+  padding: 14px;
+  margin: 10px;
+  width: 33vw;
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+input[type="radio"] {
+  width: 5vw;
+}
+.form {
+  border: 1px solid black;
+  width: 60vw;
+  font-size: 25px;
+  background-color: #f2df14;
+  font-weight: bold;
+  padding: 30px;
+}
+.txt {
+  width: 27vw;
+  height: 23vh;
+  font-size: 20px;
+  margin: 40px 0 28px 14px;
+}

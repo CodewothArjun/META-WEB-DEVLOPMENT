@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning day of 30</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>class</h1>
+    <p>Classes are in fact "special functions", and just as you can define function expressions and function
+        declarations, a class can be defined in two ways: a class expression or a class declaration.</p>
+
+    <h1>Constructor</h1>
+    <p>The constructor method is a special method for creating and initializing an object created with a class. There
+        can only be one special method with the name "constructor" in a class — a SyntaxError is thrown if the class
+        contains more than one occurrence of a constructor method.
+
+        A constructor can use the super keyword to call the constructor of the super class.</p>
+
+    <p>
+        What is this? <br>
+        In JavaScript, the this keyword refers to an object.
+
+        Which object depends on how this is being invoked (used or called).
+
+        The this keyword refers to different objects depending on how it is used:
+
+        In an object method, this refers to the object.
+        Alone, this refers to the global object.
+        In a function, this refers to the global object.
+        In a function, in strict mode, this is undefined.
+        In an event, this refers to the element that received the event.
+        Methods like call(), apply(), and bind() can refer this to any object.
+    </p>
+
+    <h3>Why we use constructor in program</h3>
+    <p>Constructors are special methods that are used to initialize objects in a class. They are called automatically
+        when an object of the class is created. The main purpose of a constructor is to initialize the instance
+        variables of the object to their initial values.
+
+        There are several reasons why constructors are used in programs:
+
+        Initialization of instance variables: Constructors are used to initialize the instance variables of an object to
+        their initial values. This ensures that the object is in a consistent state before it is used.
+
+        Encapsulation: Constructors can be used to ensure that the state of an object is properly encapsulated. This
+        means that the internal state of an object can only be modified through the methods of the object, and not
+        directly by external code.
+
+        Object creation: Constructors are used to create objects of a class. When a new object is created, its
+        constructor is called to initialize its state.
+
+        Polymorphism: Constructors can be used in polymorphism to create objects of different subclasses. This allows
+        for code to be written in a more generic way, and for objects of different types to be created using the same
+        constructor.
+
+        Overall, constructors are an important feature of object-oriented programming languages, and are used to ensure
+        that objects are properly initialized and encapsulated.</p>
+</body>
+
+</html>

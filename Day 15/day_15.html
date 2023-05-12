@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning day of 15</title>
+</head>
+
+<body>
+    <h2>The Virtual DOM</h2>
+    <p>
+        React builds a representation of the browser Document Object Model or DOM in memory called the virtual DOM. As
+        components are updated, React checks to see if the component’s HTML code in the virtual DOM matches the browser
+        DOM. If a change is required, the browser DOM is updated. If nothing has changed, then no update is performed.
+        As you know, this is called the reconciliation process
+    </p>
+    <p>
+        The Virtual DOM is a programming concept that is used in the React library for building user interfaces. It is a
+        lightweight copy of the actual DOM (Document Object Model), which is a representation of the HTML elements and
+        their attributes in a web page.
+
+        When building a user interface with React, the Virtual DOM is used to keep track of the state of the components
+        and their properties. Whenever there is a change in the state of a component, the Virtual DOM is updated. React
+        then compares the updated Virtual DOM with the previous version to identify the changes.
+
+        Once the changes are identified, React updates only the necessary parts of the actual DOM, resulting in a more
+        efficient and faster rendering process. This approach is known as "reconciliation" and is one of the key
+        features that make React highly performant.
+
+        The use of the Virtual DOM also allows for more modular and reusable components, as they can be easily rendered
+        and updated without affecting other parts of the application. Overall, the Virtual DOM is a crucial aspect of
+        the React framework and is responsible for its ability to efficiently manage complex user interfaces.
+    </p>
+
+    <h2>How react work ?</h2>
+    <p>React is a JavaScript library for building user interfaces that follows a component-based architecture. At a high
+        level, React works by allowing developers to create reusable components, each of which encapsulates its own
+        logic and presentation. These components can be combined to form complex user interfaces that can be updated
+        efficiently and dynamically.
+
+        When a user interacts with a React-based application, such as by clicking a button or filling out a form, React
+        updates the state of the relevant component(s) and then re-renders the component tree to reflect the new state.
+        However, rather than rendering the entire DOM from scratch, React uses a Virtual DOM to efficiently determine
+        which parts of the actual DOM need to be updated.
+
+        The Virtual DOM is a lightweight representation of the actual DOM, and it allows React to update the UI in a
+        more efficient and performant way. When a component's state changes, React first updates the Virtual DOM, and
+        then compares it to the previous version to determine which parts of the actual DOM need to be updated. This
+        process is known as "reconciliation", and it ensures that only the necessary changes are made to the UI,
+        resulting in a faster and smoother user experience.
+
+        In addition to its component-based architecture and use of the Virtual DOM, React also supports a number of
+        other features, such as lifecycle methods, hooks, and a powerful system of props and state, which allow
+        developers to create highly modular and reusable UI components. Overall, React's efficient rendering engine and
+        focus on modular, composable components make it a popular choice for building complex, dynamic user interfaces.
+
+    </p>
+
+    <h2>component hierarchy</h2>
+    <p>In React, the component hierarchy refers to the structure of the components in an application, where each
+        component encapsulates its own logic and presentation. The component hierarchy can be visualized as a tree,
+        where the root node represents the top-level component and its child nodes represent the nested components.
+
+        At the top of the component hierarchy is the App component, which is the entry point of the application. This
+        component can contain other components, such as header, footer, and main content components. These components
+        can in turn contain other components, creating a nested hierarchy of components.
+
+        The component hierarchy is important in React because it allows developers to create modular and reusable UI
+        components. By breaking down the application into smaller, reusable components, developers can create more
+        maintainable and scalable code.
+
+        In addition, the component hierarchy is also important for managing the state of the application. Each component
+        can have its own state, which can be passed down to child components as props. By managing the state of the
+        components in a hierarchical manner, developers can ensure that the state is updated in a consistent and
+        predictable way, making it easier to debug and maintain the application.
+
+        Overall, the component hierarchy is a fundamental concept in React, and it plays a key role in creating
+        scalable, maintainable, and efficient user interfaces.</p>
+
+
+    <div class="links">
+
+        <h3> Alternatives to React</h3>
+
+        <a href="https://lodash.com/"> Lodash</a> <br>
+
+        <a href="https://moment.github.io/luxon/#/">• Luxon</a><br>
+
+        <a href="https://redux.js.org/"> • Redux</a> <br>
+
+        <a href="https://axios-http.com/"> • Axios</a> <br>
+
+    </div>
+</body>
+
+</html>

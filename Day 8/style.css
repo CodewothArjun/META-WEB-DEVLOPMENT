@@ -1,0 +1,30 @@
+/* This is child selector */
+body {
+  background-color: rgb(195, 247, 230);
+}
+#box {
+  margin: 20px;
+}
+#parent > h1 {
+  color: rgb(4, 253, 0);
+}
+#id {
+  font-variant: normal;
+  font-size: 20px;
+  color: rgb(4, 0, 227);
+}
+.class {
+  border: 2px solid red;
+  width: 65vw;
+  height: 5vh;
+  padding: 10px;
+}
+.font-family {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+b {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: solid;
+  text-decoration-thickness: 5px;
+}

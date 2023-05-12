@@ -1,0 +1,36 @@
+#box {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+.upper {
+  color: black;
+  font-size: 25px;
+  margin: 20px 0px;
+  padding: 20px;
+  border: 2px solid blue;
+  border-width: thick;
+}
+.upper:hover {
+  color: blue;
+  background-color: beige;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.between {
+  color: purple;
+  font-size: 24px;
+  margin: 20px 0px;
+  padding: 20px;
+  border: 2px dotted rgb(80, 81, 59);
+}
+#bottom {
+  color: red;
+  font-size: 22px;
+  margin: 20px 0px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 3px dashed green;
+}

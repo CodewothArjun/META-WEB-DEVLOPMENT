@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning day 10</title>
+</head>
+
+<body>
+    <h1>Block element and Line element</h1>
+    All html elements are organized into one of two categories namely in block and in line elements.
+
+    <br><br>
+    A block level element will occupy the full horizontal width of its parent element and the vertical height of its
+    content. Each block level element will have a new line before and after. Therefore, multiple block level elements
+    will stack on top of each other like a stack of boxes. <br><br> In line elements only occupy the width and height of
+    their
+    content. They don't appear on a new line, hence the name in line. Therefore, multiple in line elements can form a
+    row of elements. When coding in html, you need to be able to recognize and use block elements. <br><br> Some
+    examples of
+    block level elements include the tags, div, form and heading. You also need to be familiar with common in line
+    elements. These include the tags anchor, image, input label, bold, italics, emphasis and span.
+    <br><br>
+    <hr>
+    <hr>
+    <hr><br>
+    <h2> Alignment basics</h2>
+    Let's explore how to align text and HTML elements using CSS.
+
+    Let's first focus on horizontal alignment. Vertical alignment is more difficult so you'll explore that later on.
+    <br>
+
+    <h3> Text Alignment</h3>
+
+    Aligning text within an HTML element is very simple. To do this, you use the text-align CSS property. In the
+    following example, the CSS rule is setting the text of all paragraph elements to be center aligned.
+    <pre>
+    p {
+        text-align: center;
+    }
+</pre> <br>
+    Text alignment can be set to left, right, center and justify.
+
+    The justify alignment spreads the text out so that every line of the text has the same width.
+
+    The default alignment is left for languages that are left-to-right such as English. For right-to-left languages such
+    as Arabic, the default alignment is right.
+
+    <h3> HTML Element Alignment</h3>
+
+    HTML element alignment is more complicated than text alignment. To align HTML elements, you must consider the box
+    model and document flow from previous lessons. Aligning an HTML element is done by changing the properties of its
+    box model and how it impacts the document flow.
+
+    <h3> HTML Element Center Alignment</h3>
+
+    To center align an element, you set a width on the element and push its margins out to fill the remaining available
+    space of the parent element.
+    In your CSS, you'll set the parent element to have a red border to visualize the space it occupies:
+
+    <pre>
+    .parent {
+         border: 4px solid red;
+    }
+</pre>
+    The child element will have a width equal to 50% of the parent element with a padding of 20 pixels. Note that
+    padding: 20px is shorthand for setting the padding top, bottom, left and right to 20px. To visualize the space it
+    occupies, set the border to green:
+
+    <pre>
+        .child {
+        width: 50%;
+        padding: 20px;
+        border: 4px solid green;
+        }
+</pre> <br>
+    To align the element to the center, set its margin property to auto. The auto will tell the browser to calculate the
+    margin automatically based on the space available.
+
+    <pre>
+    .child {
+        width: 50%;
+        padding: 20px;
+        border: 4px solid green;
+        margin: auto;
+    }
+</pre> <br>
+    The result is the child element is centered within the parent element:
+
+    <h3> Alignment of the child in the parent element</h3>
+    It is important to note that this works because the div element is a block-level element.
+
+    If you want to align an inline element like img, you will need to change it to a block-level element. Similar to the
+    div example, you add the img to a parent element:
+
+    <pre>
+    div class="parent">
+        img src="photo.png" class="child">
+    div>
+</pre>
+    The CSS rule then changes the img element to a block-level element and sets its margin to auto:
+
+    <pre>
+    .child {
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+
+</pre>
+    To be more precise, in CSS you can set only the left and right margins to auto. This allows you to set the top and
+    bottom margins to specific values if needed.
+    <pre>
+    .child {
+        display: block;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</pre>
+    <h3> HTML Element Left / Right Alignment</h3>
+
+    The two most common ways to left and right align elements are to use the float property and the position property.
+
+    The position property has several value options that impact how the element displays in the document flow. You'll
+    explore how to use the position property later on. For now, let's focus on the float property.
+
+    The float property sets an element's position relative to the text content within a parent element. Text will wrap
+    around the element.
+
+
+</body>
+
+</html>

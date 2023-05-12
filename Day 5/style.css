@@ -1,0 +1,22 @@
+h1 {
+  color: blue;
+}
+
+img {
+  width: 272px;
+  height: 350px;
+}
+.img {
+  margin-left: 500px;
+}
+
+.text {
+  width: 1200px;
+  font-size: 20px;
+  margin-left: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  font-size: 20px;
+}

@@ -1,0 +1,21 @@
+body {
+  background-color: #fbbf1b;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 300px;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  float: top;
+}
