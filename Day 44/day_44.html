@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning day of 44 </title>
+</head>
+
+<body>
+    <p>Resolving conflicts</p>
+    <p> git pull
+        git checkout -b feature1</p>
+    <p> git pull
+        git checkout -b feature2</p>
+    <P> git add Feature.js
+        git commit -m 'chore: added feature 1!!'
+        git pull origin main
+        git push -u origin feature1</P>
+    <p> git add Feature.js
+        git commit -m 'chore: added feature 2!!!'
+        git pull origin main
+
+        From github.com:demo/demo-repo
+        * branch main -> FETCH_HEAD
+        9012934..d3b3cc0 main -> origin/main
+        Auto-merging Feature.js
+        CONFLICT (content): Merge conflict in Feature.js
+        Automatic merge failed; fix conflicts and then commit the result.</p>
+    <p> git status
+        On branch feature2
+        You have unmerged paths.
+        (fix conflicts and run "git commit")
+        (use "git merge --abort" to abort the merge)
+
+        Unmerged paths:
+        (use "git add <file>..." to mark resolution)
+            both modified: Feature.js
+
+            no changes added to commit (use "git add" and/or "git commit -a")</p>
+    <p> git log --merge
+
+        commit 79bca730b68e5045b38b96bec35ad374f44fe4e3 (HEAD -> feature2)
+        Author: Developer 2
+        <developer2@demo.com>
+            Date: Sat Jan 29 16:55:40 2022 +0000
+
+            chore: add feature 2
+
+            commit 678b0648107b7c53e90682f2eb8103c59f3cb0c0
+            Author: Developer 1
+            <developer1@demo.com>
+                Date: Sat Jan 29 16:53:40 2022 +0000
+
+                chore: add feature 1
+    </p>
+    <p>git diff
+
+        diff --cc Feature.js
+        index 1b1136f,c3be92f..0000000
+        --- a/Feature.js
+        +++ b/Feature.js
+        @@@ -1,4 -1,4 +1,8 @@@
+        let add = (a, b) => {
+        ++<<<<<<< HEAD + if(a + b> 10) { return 'way too much'}
+            ++=======
+            + if(a + b > 10){ return 'too much' }
+            ++>>>>>>> d3b3cc0d9b6b084eef3e0afe111adf9fe612898e
+            return a + b;
+            }
+    </p>
+    <p> git add Feature.js
+        git commit -m 'fix merge conflicts'
+        git push -u origin feature2</p>
+</body>
+
+</html>
