@@ -1,5 +1,4 @@
 // first way to write a object in js
-
 var house2 = {};
 house2["rooms"] = 4;
 house2["color"] = "pink";
@@ -64,8 +63,6 @@ console.log("Trignometry: " + Math.cos(30));
 console.log("compare-min/max: " + Math.min(30, 5, 23));
 console.log("Random: " + Math.random());
 
-
-
 // looping
 var names = "Arjun";
 var i;
@@ -88,4 +85,4 @@ console.log("lastIndexof: " + chars.lastIndexOf("K"));
 console.log("Split: " + con.split("M"));
 console.log("Lowercase: " + con.toLocaleLowerCase());
 console.log("Uppercase: " + con.toLocaleUpperCase());
-
+console.log("Uppercase: " + con.toUpperCase());

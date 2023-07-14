@@ -22,7 +22,7 @@ var test = 2 < 4;
 var fun = function () {
   console.log("I am a function.");
 };
-console.log("Which types of data: \n" + typeof num);
+console.log("Which types of data: " + typeof num);
 console.log(typeof string);
 console.log(typeof arr);
 console.log(typeof test);

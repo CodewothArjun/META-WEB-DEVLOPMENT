@@ -1,14 +1,14 @@
-//function that takes an array as input and display all items of this array
+///function that takes an array as input and display all items of this array
 function listArrayItems(arr) {
   for (var i = 0; i < arr.length; i++) {
     console.log(i, arr[i]);
   }
 }
 var colors = ["Voilet", "Gray", "Brown", "White", "Black", "Blue", "Orange"];
-listArrayItems(colors);
+listArrayItems(colors); //calling a function
 
 //function
-function letterFinder(word, match) {
+function letterFinder(word, match) {     //declaring and defining 
   for (var i = 0; i < word.length; i++) {
     if (word[i] == match) {
       //check if the current characater, word[i], is equal to the match
@@ -19,7 +19,7 @@ function letterFinder(word, match) {
   }
 }
 
-letterFinder("test", "t");
+letterFinder("test", "t"); //calling a function
 
 //Object
 //creating an object with properties and their values
